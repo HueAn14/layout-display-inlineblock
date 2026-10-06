@@ -1,0 +1,62 @@
+/* 1. Thiết lập chung */
+* {
+    box-sizing: border-box; /* Tính cả padding/border vào width để không bị tràn kích thước */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+/* 2. Thanh điều hướng với display: inline-block */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* 3. Khối section chứa 3 cột */
+section {
+    margin-top: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    display: inline-block;
+    width: 30%;
+    padding: 30px 20px;
+    background-color: lightblue;
+    margin: 0 1.5%; /* Sử dụng % margin cân đối khoảng cách giữa 3 cột */
+    border-radius: 6px;
+    vertical-align: top; /* Căn lề trên cùng cho 3 cột nằm thẳng hàng */
+}
+
+/* 4. Footer */
+footer {
+    margin-top: 40px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
